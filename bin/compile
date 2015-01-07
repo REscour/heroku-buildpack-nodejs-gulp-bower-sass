@@ -174,7 +174,7 @@ echo "export PATH=\"\$HOME/.gem/ruby/1.9.1/bin:\$PATH\"" > $build_dir/.profile.d
 
 # Check and run gulp
 (
-  if [ -f $build_dir/gulpfile.js ]; then
+  if [ -f $build_dir/gulpfile.js ] || [ -f $build_dir/gulpfile.coffee ]; then
     # get the env vars
     if [ -d "$env_dir" ]; then
       status "Exporting config vars to environment"
