@@ -132,7 +132,7 @@ if [ ! -e $build_dir/Procfile ]; then
 fi
 
 # install sass
-status "Installing Sass"
+status "Installing Sass and setting up ruby paths..."
 export GEM_HOME=$build_dir/.gem/ruby/2.3.3
 PATH="$GEM_HOME/bin:$PATH"
 # if test -d $cache_dir/ruby/.gem; then
